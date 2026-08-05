@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PS THREAD ART | Handmade String Art</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:#111;color:#fff}
+header{background:#000;padding:30px;text-align:center}
+.logo{font-size:35px;font-weight:bold;color:#d4af37}
+section{padding:25px}.card{background:#1c1c1c;padding:20px;margin:15px 0;border-radius:15px}
+h2,a{color:#d4af37}button{background:#25D366;color:#fff;border:none;padding:15px;width:100%;border-radius:10px;font-size:18px}
+input,textarea,select{width:100%;padding:12px;margin:8px 0;border-radius:8px;border:none}
+table{width:100%;border-collapse:collapse}td,th{padding:10px;border:1px solid #555}
+footer{background:#000;text-align:center;padding:20px}
+</style></head>
+<body>
+<header><div class="logo">PS THREAD ART</div><p>Threads That Tell Stories</p><p>Premium Handmade String Art • Hyderabad, India</p></header>
+<section>
+<div class="card"><h2>About Thread Art</h2><p>Thread Art (String Art) is a creative handmade art technique where threads are wrapped between nails or pins fixed on a wooden board to create portraits, names, logos, geometric designs, flowers and customized patterns.</p></div>
+<div class="card"><h2>Main Materials</h2><p>🪵 Wooden/MDF Board<br>📌 Nails or Pins<br>🧵 Cotton/Nylon Thread<br>🔨 Small Hammer<br>✂️ Scissors<br>📐 Design Template</p></div>
+<div class="card"><h2>How It Works</h2><p>A design is planned on the board, nails are placed around required points, and threads are connected repeatedly to create detailed images with curves, shading and beautiful patterns.</p></div>
+<div class="card"><h2>Popular Products</h2><p>❤️ Couple & Wedding Portraits<br>👨‍👩‍👧 Family Portraits<br>👤 Single Person Portraits<br>🏷️ Names & Initials<br>🏢 Business Logos<br>🌸 Decorative Designs<br>🎁 Customized Gifts<br>🏠 Wall Décor</p></div>
+
+<div class="card">
+<h2>Demo Gallery</h2>
+<img src="images/demo1.jpg" alt="Demo 1" style="width:100%;border-radius:10px;margin-bottom:15px;">
+<img src="images/demo2.jpg" alt="Demo 2" style="width:100%;border-radius:10px;margin-bottom:15px;">
+<img src="images/demo3.jpg" alt="Demo 3" style="width:100%;border-radius:10px;">
+</div>
+<div class="card"><h2>Price Details</h2><table><tr><th>Size</th><th>Price</th></tr><tr><td>8 × 8 inch</td><td>₹799</td></tr><tr><td>10 × 10 inch</td><td>₹999</td></tr><tr><td>12 × 12 inch</td><td>₹1,299</td></tr><tr><td>14 × 14 inch</td><td>₹1,599</td></tr><tr><td>16 × 16 inch</td><td>₹1,999</td></tr><tr><td>18 × 18 inch</td><td>₹2,499</td></tr><tr><td>20 × 20 inch</td><td>₹2,999</td></tr><tr><td>24 × 24 inch</td><td>₹3,999</td></tr><tr><td>30 × 30 inch</td><td>₹5,499</td></tr></table></div>
+<div class="card"><h2>Direct Order</h2>
+<input id="name" placeholder="Your Name"><input id="phone" placeholder="Mobile Number"><input id="email" placeholder="Email">
+<select id="product">
+<option>Couple Portrait</option><option>Family Portrait</option><option>Name Art</option><option>Logo Design</option></select>
+<textarea id="details" placeholder="Order Details"></textarea>
+<button onclick="order()">Order Now on WhatsApp</button></div>
+<div class="card"><h2>Contact</h2><p>📞 WhatsApp: +91 9701258294<br>📧 Email: psthreadart@gmail.com<br>📸 Instagram: @the_nanka02<br>📍 Hyderabad, India<br>🚚 Delivery: All Over India</p></div>
+</section><footer>© 2026 PS THREAD ART | Handmade With Love ❤️</footer>
+<script>
+function order(){
+const name=document.getElementById("name").value;
+const phone=document.getElementById("phone").value;
+const email=document.getElementById("email").value;
+const product=document.getElementById("product").value;
+const details=document.getElementById("details").value;
+const msg=`New PS THREAD ART Order%0A%0AName: ${name}%0APhone: ${phone}%0AEmail: ${email}%0AProduct: ${product}%0ADetails: ${details}`;
+window.open("https://wa.me/919701258294?text="+msg,"_blank");
+}
+</script></body></html>
