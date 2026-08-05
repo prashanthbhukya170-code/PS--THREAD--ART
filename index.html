@@ -227,3 +227,69 @@ window.open(
 
 </div>
 </div>
+<svg width="500" height="500" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f7d774"/>
+      <stop offset="50%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#8c6b16"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="500" height="500" fill="#111"/>
+
+  <!-- Circle -->
+  <circle cx="250" cy="180" r="120"
+          fill="none"
+          stroke="url(#gold)"
+          stroke-width="2"/>
+
+  <!-- Thread Lines -->
+  <g stroke="url(#gold)" stroke-width="1">
+    <line x1="210" y1="100" x2="305" y2="245"/>
+    <line x1="220" y1="95" x2="310" y2="240"/>
+    <line x1="230" y1="90" x2="315" y2="235"/>
+    <line x1="240" y1="88" x2="320" y2="230"/>
+    <line x1="250" y1="86" x2="325" y2="225"/>
+    <line x1="260" y1="88" x2="330" y2="220"/>
+  </g>
+
+  <!-- PS -->
+  <text x="250" y="215"
+        text-anchor="middle"
+        font-size="110"
+        font-family="Georgia, serif"
+        font-weight="bold"
+        fill="url(#gold)">
+    PS
+  </text>
+
+  <!-- Brand Name -->
+  <text x="250" y="340"
+        text-anchor="middle"
+        font-size="30"
+        letter-spacing="6"
+        font-family="Arial"
+        fill="url(#gold)">
+    PS THREAD ART
+  </text>
+
+  <!-- Divider -->
+  <line x1="140" y1="360" x2="220" y2="360"
+        stroke="url(#gold)" stroke-width="2"/>
+  <polygon points="250,354 256,360 250,366 244,360"
+           fill="url(#gold)"/>
+  <line x1="280" y1="360" x2="360" y2="360"
+        stroke="url(#gold)" stroke-width="2"/>
+
+  <!-- Tagline -->
+  <text x="250" y="390"
+        text-anchor="middle"
+        font-size="16"
+        letter-spacing="4"
+        font-family="Arial"
+        fill="#d4af37">
+    HANDMADE STRING ART
+  </text>
+</svg>
